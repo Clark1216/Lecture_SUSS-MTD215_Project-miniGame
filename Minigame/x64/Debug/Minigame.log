@@ -1,0 +1,10 @@
+﻿  PlanWar.cpp
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(25,19): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(25,22): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(92,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(92,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(93,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(93,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(136,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\PlanWar.cpp(136,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+  Minigame.vcxproj -> F:\Lecturing\SUSS-Lecture_MTD215\Demo_SRC\2-Lecture_SUSS-MTD215_Project-Minigame\Minigame\x64\Debug\Minigame.exe

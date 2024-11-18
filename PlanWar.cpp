@@ -109,17 +109,17 @@ void drawPlaying()
     drawFrame(49, 9, 79, 20, '-', '|');//  draw operate frame
     drawFrame(49, 20, 79, 24, '-', '|');// draw other message frame
     SetPos(52, 6);
-    cout << "得分：";
+    cout << "Score：";
     SetPos(52, 7);
-    cout << "称号：";
+    cout << "Award：";
     SetPos(52, 10);
-    cout << "操作方式：";
+    cout << "How to：";
     SetPos(52, 12);
-    cout << "  a,s,d,w 控制战机移动。";
+    cout << "a,s,d,w to Move Jet";
     SetPos(52, 14);
-    cout << "  p 暂停游戏。";
+    cout << "  p to pause game";
     SetPos(52, 16);
-    cout << "  e 退出游戏。";
+    cout << "  e to quit game";
 }
 
 //在[a, b)之间产生一个随机整数
@@ -164,11 +164,11 @@ void printFrameCoord(Frame a)
 int drawMenu()
 {
     SetPos(30, 1);
-    cout << "飞机大战-刘晶晶";
+    cout << "Jet Fighter";
     drawRow(3, 0, 79, '-');
     drawRow(5, 0, 79, '-');
     SetPos(28, 4);
-    cout << "w 和 s 选择， k 确定";
+    cout << "w & s select， k to confirm";
     SetPos(15, 11);
     cout << "1. Easy Mode";
     SetPos(15, 13);
@@ -176,9 +176,9 @@ int drawMenu()
     drawRow(20, 0, 79, '-');
     drawRow(22, 0, 79, '-');
     SetPos(47, 11);
-    cout << "敌人属性：";
+    cout << "Enemies:";
     SetPos(51, 13);
-    cout << "有着较慢的移动速度。";
+    cout << "Slow Speed";
     SetPos(24, 21);
     int j = 11;
     SetPos(12, j);
@@ -203,9 +203,9 @@ int drawMenu()
                     SetPos(51, 13);
                     cout << "　　　　　　　　　　　　";
                     SetPos(47, 11);
-                    cout << "敌人属性：";
+                    cout << "Enemies:";
                     SetPos(51, 13);
-                    cout << "有着较慢的移动速度。";
+                    cout << "Slow Speed";
                 }
                 break;
             }
@@ -221,9 +221,9 @@ int drawMenu()
                     SetPos(51, 13);
                     cout << "　　　　　　　　　　　　　　";
                     SetPos(47, 11);
-                    cout << "敌人属性：";
+                    cout << "Enemies";
                     SetPos(51, 13);
-                    cout << "移动速度较快。";
+                    cout << "Fast Speed";
                 }
                 break;
             }
@@ -417,7 +417,7 @@ void Game::Pause()
     SetPos(61, 2);
     cout << "               ";
     SetPos(61, 2);
-    cout << "暂停中...";
+    cout << "Paused...";
     char c = _getch();
     while (c != 'p')
         c = _getch();
@@ -497,7 +497,7 @@ void Game::judgePlane()
             if (judgeCoordInFrame(enemy[i], position[j]))
             {
                 SetPos(62, 1);
-                cout << "坠毁";
+                cout << "Crashed!";
                 drawFrame(enemy[i], '+', '+');
                 Sleep(1000);
                 GameOver();
@@ -579,13 +579,13 @@ void Game::printScore()
     {
         SetPos(60, 7);
         if (x == 5)
-            title = "初级飞行员";
+            title = "Junior Pilot";
         else if (x == 4)
-            title = "中级飞行员";
+            title = "Rooster Pilot";
         else if (x == 3)
-            title = "高级飞行员";
+            title = "Senior Pilot";
         else if (x == 2)
-            title = "王牌飞行员";
+            title = "Flying Ace";
         cout << title;
     }
     rankf = rank;
@@ -655,7 +655,7 @@ void Game::Playing()
         if (score < 0)
             {
                 SetPos(62, 1);
-                cout << "分数不够";
+                cout << "Insufficient Score";
                 Sleep(1000);
                 score = 0;
                 GameOver();
@@ -687,12 +687,12 @@ void Game::GameOver()
     //SetPos(31, 11);
     //cout << "击落敌机：" << score / 5 << " 架";
     SetPos(31, 11);
-    cout << "得　　分：" << score;
+    cout << "Scores：" << score;
     SetPos(31, 12);
-    cout << "获得称号：" << title;
+    cout << "Award：" << title;
     SetPos(30, 16);
     Sleep(1000);
-    cout << "继续？ 是（y）| 否（n）";
+    cout << "Continue？ （y）| （n）";
 as:
     char x = _getch();
     if (x == 'n')

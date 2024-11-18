@@ -37,8 +37,8 @@ enum GameNum
 void Print()  
 {  
     system("cls");  
-    cout << "*****************  2048 ¿Ø ÖÆ Ì¨ °æ  ******************" << endl;  
-    cout << "*****************  By Tanzf (Intern) ******************" << endl << endl;  
+    cout << "*****************  2048 CMD Version  ******************" << endl;  
+    cout << "*****************  By DPF ******************" << endl << endl;  
     for (int i = 0; i < ROW; ++i)  
     {  
         cout << "---------------------------------"<< endl;  
